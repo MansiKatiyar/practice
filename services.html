@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-group{
+            display:inline-flex;
+        }
+        .card{
+            height:350px;
+            width:400px;
+            padding:10px;
+            margin:10px;
+            border:1px solid pink;
+            box-shadow: 2px 2px 2px 2px palevioletred;
+            
+        }
+        .images{
+            width:400px;
+            height:180px;
+            animation:bounceIn 2s infinite;
+        }
+        @keyframes bounceIn{
+          0% {
+            transform: scale(0.1);
+            opacity:0;
+          }
+          60% {
+            transform: scale(0.9);
+            opacity:1;
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        .card-group-two{
+            display:inline-flex;
+        }
+        .header h1{
+            font-size: 30px;
+            color:teal;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+        <h1 style="align-items: center;text-align: center; justify-content: center;">Services</h1>
+        </div>
+    <div class="card-group">
+        <div class="card">
+          <img src="./images/wedding rings.jfif" class="images" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Wedding ring and flowers</h5>
+            <p class="card-text">A wedding ring or wedding band is a finger ring that usually forged from metal.
+           </p>
+                <span class="price">Rs. 7000 </span>
+                <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 8000</span>
+                <span class="discount-percentage" style="color: rgb(146, 7, 7);">(12.5% OFF)</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/catering.jfif" class="images" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Catering</h5>
+            <p class="card-text">This type of catering service is often responsible
+                for all aspects of the event planning.
+            </p>
+            <span class="price">Rs. 10000 </span>
+                <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 12000</span>
+                <span class="discount-percentage" style="color: rgb(146, 7, 7);">(16.66% OFF)</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/venue2.jfif" class="images" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Venue</h5>
+            <p class="card-text">Planning the wedding venue is really the first step in planning a wedding 
+                everything else hinges on the location </p>
+                <span class="price">Rs. 28000 </span>
+                <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 30000</span>
+                <span class="discount-percentage" style="color: rgb(146, 7, 7);">(6.66% OFF)</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-group-two">
+        <div class="card">
+            <img src="./images/music.jfif" class="images" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Music</h5>
+              <p class="card-text">Music is one of the most important thing in any event.Music streaming has grown up 
+                  tremendously. </p>
+                  <span class="price">Rs. 700 </span>
+                <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 1000</span>
+                <span class="discount-percentage" style="color: rgb(146, 7, 7);">(30% OFF)</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/cakes.jfif" class="images" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cakes</h5>
+              <p class="card-text">Our wide range of delectable cake varities might include 
+                  birthday cakes,anniversary cakes and party cakes.
+              </p>
+              <span class="price">Rs. 800 </span>
+                <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 1600</span>
+                <span class="discount-percentage" style="color: rgb(146, 7, 7);">(50% OFF)</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/wedding accessories.jfif" class="images" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Wedding accessories</h5>
+              <p class="card-text">Wedding are occasions to celebrate with full glamor  and our sole 
+                  purpose is to concoct essence of merriment.
+              </p>
+              <span class="price">Rs. 5000 </span>
+                <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 6000</span>
+                <span class="discount-percentage" style="color: rgb(146, 7, 7);">(10% OFF)</span>
+            </div>
+          </div>
+      </div>
+      </div>
+</body>
+</html>
