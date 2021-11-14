@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/8e517d223f.js" crossorigin="anonymous"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap');
+
 
         * {
             margin: 0;
@@ -69,6 +71,13 @@
             --text-color: #444;
             --gradient: linear-gradient(#fe5b3d, #ffac38);
         }
+        .ride-container{
+            display:grid;
+            align-items:center;
+            grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+            gap:1 rem;
+            margin-top: 2 rem;
+        }
 
         html::-webkit-scrollbar {
             width: 0.5rem;
@@ -100,12 +109,56 @@
             padding: 15px 100px;
 
         }
+        .ride-container .box{
+            text-align: center;
+            padding:20px;
+        }
+        .ride-container .box .fas{
+            font-size: 34px;
+            padding:10px;
+            background: #eeeff1;
+            border-radius: 0.5rem;
+            color:orange;
+        }
+        .ride-container .box .far{
+            font-size: 34px;
+            padding:10px;
+            background: #eeeff1;
+            border-radius: 0.5rem;
+            color:orange;
+        }
+        .ride-container .box h2{
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin:1.4rem 0 0.5rem;
+        }
+        .ride-container .box .fas:hover, 
+        .ride-container .fas{
+            background: orangered;
+            color:#fff;
+        }
+        .ride-container .box .far:hover, 
+        .ride-container .far{
+            background: orangered;
+            color:#fff;
+        }
+        .heading{
+            text-align:center;
+        }
+        .heading span{
+            font-weight:500;
+            text-transform: uppercase;
+        }
+        .heading h1{
+            font-size:2rem;
+
+        }
 
         .home {
             width: 100%;
             min-height: 100vh;
             position: relative;
-            background: url(./images/download\(3\).jfif);
+            background: url(./images/car10.jpg);
             background-repeat: no-repeat;
             background-position: center right;
             background-size: cover;
@@ -216,11 +269,8 @@
     <section class="home" id="home">
         <div class="text">
             <h1><span>Looking</span> to <br>rent a car</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt explicabo dignissimos pariatur
+            <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt explicabo dignissimos pariatur
                 dolores illo quis cumque dolorem provident placeat!</p>
-            <div class="app-stores">
-                <img src="./images/download (1).png" alt="">
-            </div>
         </div>
         <div class="form-container">
             <form action="">
@@ -245,9 +295,25 @@
             <span>How Its Work</span>
             <h1>Rent With 3 Easy steps</h1>
         </div>
-
+        <div class="ride-container">
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h2>Choose a Location</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro, placeat nisi saepe amet iure qui, impedit delectus explicabo quisquam maiores velit corporis omnis accusantium dicta. Praesentium alias amet optio?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-calendar-alt"></i>
+                <h2>Pick-Up Date</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est accusamus in sint amet eligendi delectus aut, fugiat, illum beatae ipsam quam illo, ullam recusandae quod itaque quae tenetur architecto maiores?</p>
+            </div>
+            <div class="box">
+                <i class="far fa-calendar-check"></i>
+                <h2>Book A Car</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui id sint, tenetur architecto cupiditate sunt omnis doloribus recusandae voluptatum autem laudantium aliquid blanditiis, molestias facere quia. Quae exercitationem recusandae magnam!/p>
+            </div>
+        </div>
     </section>
-    <script src="carrental.js"></script>
+
 
 </body>
 
