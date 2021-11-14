@@ -32,6 +32,36 @@
             border-radius: 0.5rem;
 
         }
+        .input-box{
+            flex:1 1 7rem;
+            display:flex;
+            flex-direction:column;
+        }
+        .input-box span{
+            font-weight: 500;
+        }
+        .input-box input{
+          padding:7px;
+          outline:none;
+          border:none;
+          background: #eeeff1;
+          border-radius: 0.5rem;
+          font-size:1rem;  
+        }
+        .form-container form .btn{
+            flex:1 1 7rem;
+            padding:10px 34px;
+            border:none;
+            border-radius: 0.5rem;
+            background: #474fa0;
+            color:#fff;
+            font-size:1rem;
+            font-weight: 500;
+
+        }
+        .form-container form .btn:hover{
+            background: orange;
+        }
 
         :root {
             --main-cololr: #fe5b3d;
@@ -49,7 +79,7 @@
         }
 
         html::-webkit-scrollbar-thumb {
-            background: var(--main-cololr);
+            background: var(--main-color);
             border-radius: 5rem;
         }
 
@@ -90,7 +120,7 @@
         }
 
         .text span {
-            color: var(--main-cololr);
+            color: var(--main-color);
         }
 
         .text p {
@@ -162,7 +192,7 @@
         }
 
         .header-btn .sign-in:hover {
-            background: var(--main-cololr);
+            background: orange;
         }
     </style>
 </head>
@@ -209,6 +239,13 @@
                 <input type="submit" name="" id="" class="btn">
             </form>
         </div>
+    </section>
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How Its Work</span>
+            <h1>Rent With 3 Easy steps</h1>
+        </div>
+
     </section>
     <script src="carrental.js"></script>
 
